@@ -96,15 +96,6 @@ document.getElementById("discount-btn").addEventListener("click", function () {
     totalAmountElement.innerText = totalAmount;
 })
 
-function addToHtmlTag(cardName){
-    const createElement = document.getElementById('create-element')
-    const count = createElement.childElementCount;
-
-    const p = document.createElement('p');
-    p.innerText = `${count + 1}.  ${cardName}`;
-    createElement.appendChild(p);
-
-}
 
 
 
