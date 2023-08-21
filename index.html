@@ -27,7 +27,7 @@
 
     <div class="hero min-h-screen bg-[#F9F6E2]">
       <div class="hero-content flex-col lg:flex-row-reverse">
-        <img src="./images/Summer 1.png" class="max-w-sm " />
+        <img src="./images/Summer 1.png" class="md:max-w-sm " />
         <div>
           <h1 class="text-3xl font-medium text-[#111] text-center">---SALE FEVER---</h1>
           <p class="py-6 text-5xl font-bold">Purchase TK 200 or
@@ -43,15 +43,15 @@
     </div>
   </header>
   <!-- Banner section end here -->
-  <main class=" w-[80%] mx-auto flex px-2 gap-2">
+  <main class=" w-[80%] lg:w-11/12 mx-auto flex flex-col lg:flex-row px-2 gap-2">
     <!-- card sectio start here -->
 
     <!-- kitchen Section -->
     <section class="my-[30px] flex-grow">
-      <p class="text-[#111] text-5xl font-semibold mb-4">Kitchenware</p>
-      <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <p class="text-[#111] text-2xl sm:text-5xl font-semibold mb-4">Kitchenware</p>
+      <div class="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- first card -->
-        <div id="first-card" class="card  p-5 bg-white rounded-lg border-2  border-gray-100 ">
+        <div id="first-card" class="card  p-2 bg-white rounded-lg border-2  border-gray-100 ">
           <figure><img src="./images/prod1.png" alt="" /></figure>
           <div class="card-body items-center text-center">
             <div class="rating  rating-half">
@@ -72,7 +72,7 @@
           </div>
         </div>
         <!-- second card -->
-        <div id="second-card" class="card  p-5 bg-white rounded-lg border-2  border-gray-100">
+        <div id="second-card" class="card  p-2 bg-white rounded-lg border-2  border-gray-100">
           <figure><img src="./images/prod2.png" alt="" /></figure>
           <div class="card-body items-center text-center">
             <div class="rating  rating-half">
@@ -93,7 +93,7 @@
           </div>
         </div>
         <!-- third card -->
-        <div id="third-card" class="card  p-5 bg-white rounded-lg border-2   border-gray-100 ">
+        <div id="third-card" class="card  p-2 bg-white rounded-lg border-2   border-gray-100 ">
           <figure><img src="./images/prod3.png" alt="" /></figure>
           <div class="card-body items-center text-center">
             <div class="rating  rating-half">
@@ -115,10 +115,10 @@
         </div>
       </div>
       <!-- sport Section -->
-      <p class="text-[#111] text-5xl font-semibold mb-8 mt-8">Sportswear</p>
-      <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <p class="text-[#111] text-2xl sm:text-5xl font-semibold mb-8 mt-8">Sportswear</p>
+      <div class="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- fourth card -->
-        <div id="fourth-card" class="card  p-5 bg-white rounded-lg border-2  border-gray-100 ">
+        <div id="fourth-card" class="card  p-2 bg-white rounded-lg border-2  border-gray-100 ">
           <figure><img src="./images/prod4.png" alt="" /></figure>
           <div class="card-body items-center text-center">
             <div class="rating  rating-half">
@@ -139,7 +139,7 @@
           </div>
         </div>
         <!-- fifth card -->
-        <div id="fifth-card" class="card  p-5 bg-white rounded-lg border-2 border-gray-100">
+        <div id="fifth-card" class="card  p-2 bg-white rounded-lg border-2 border-gray-100">
           <figure><img src="./images/prod5.png" alt="" /></figure>
           <div class="card-body items-center text-center">
             <div class="rating  rating-half">
@@ -160,7 +160,7 @@
           </div>
         </div>
         <!-- six card -->
-        <div id="six-card" class="card  p-5 bg-white rounded-lg border-2  border-gray-100 ">
+        <div id="six-card" class="card  p-2 bg-white rounded-lg border-2  border-gray-100 ">
           <figure><img src="./images/prod6.png" alt="" /></figure>
           <div class="card-body items-center text-center">
             <div class="rating  rating-half">
@@ -182,31 +182,54 @@
         </div>
       </div>
     </section>
-<!-- discount section -->
-    <section class="flex-grow w-3/12 mt-10">
-        <div class="bg-white px-3 py-4 my-8">
-          <h1 class="text-[#111] text-xl font-medium">Have coupon?</h1>
-          <input type="text" id="inputField" placeholder="Coupon code" class="w-28 rounded border-solid border border-[#11111126]">
-          <button id="discount-btn" class="px-3 py-1 bg-[#e527b2] text-white" disabled>Apply</button>
-        </div>
-        <div class="bg-white px-3 py-4">
-          <div id="create-element" class="text-[#111] text-lg font-semibold">
+    <!-- discount section -->
+    <section class="flex-grow sm:w-3/12 md:w-11/12 lg:w-4/12 mt-10">
+      <div class="bg-white px-3 py-4 my-12">
+        <h1 class="text-[#111] text-xl font-semibold">Have coupon?</h1>
+        <input type="text" id="inputField" placeholder="Coupon code"
+          class="w-28 rounded border-solid border my-2 border-[#11111126]">
+        <button id="discount-btn" class="px-3 py-1 bg-[#e527b2] text-white" disabled>Apply</button>
+      </div>
+      <div class="bg-white px-3 py-4">
+        <div id="create-element" class="text-[#111] text-lg font-semibold">
 
-          </div>
-          <div class="my-8">
-            <p class="text-[#111] text-xl font-medium">Total Price: <span id="total-price"
-              class="text-[#11111180] text-xl font-medium">0.00</span><span class="text-[#11111180]">Tk</span></p>
-            <p class="text-[#111] text-xl font-medium">Discount: <span id="discount-amount" class="text-[#11111180] text-xl font-medium">0.00</span><span class="text-[#11111180]">Tk</span></p>
-            <p id="total" class="text-[#111] text-xl font-medium">Total: <span id="total-amount" class="text-[#11111180] text-xl font-medium">0.00</span><span class="text-[#11111180]">Tk</span></p>
         </div>
-        <button id="clicked-btn" class=" py-1 bg-[#e527b2] text-white w-full" disabled>Make Purchase</button>
-          </div>
+        <div class="my-8">
+          <p class="text-[#111] text-xl font-semibold">Total Price: <span id="total-price"
+              class="text-[#11111180] text-xl font-medium">0.00</span><span class="text-[#11111180]">Tk</span></p>
+          <p class="text-[#111] text-xl font-semibold">Discount: <span id="discount-amount"
+              class="text-[#11111180] text-xl font-medium">0.00</span><span class="text-[#11111180]">Tk</span></p>
+          <p id="total" class="text-[#111] text-xl font-semibold">Total: <span id="total-amount"
+              class="text-[#11111180] text-xl font-medium">0.00</span><span class="text-[#11111180]">Tk</span></p>
+        </div>
+      </div>
+      <!-- Modal Section -->
+      <div class="card-actions">
+        <button id="clicked-btn" class="py-1 bg-[#e527b2] text-white w-full" disabled
+          onclick="my_modal_1.showModal()">Make Purchase</button>
+        <dialog id="my_modal_1" class="modal">
+          <form method="dialog" class="">
+            <div class="modal-action">
+              <div class="card card-compact sm:w-96 bg-base-100 shadow-xl">
+                <figure><img src="./images/congo.png" alt="Shoes" /></figure>
+                <div class="card-body items-center text-center">
+                  <p class="font-5xl font-bold text-[#111]">Congratulations</p>
+                  <p class="text-[#11111180] text-lg font-normal">Your Purchase the product</p>
+                  <div class="card-actions">
+                    <button id="btn-go-home" class="btn btn-secondary" onclick="window.location.reload()">GO Home</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </dialog>
+      </div>
     </section>
   </main>
 
 
-<script src="./js/utilities.js"></script>
-<script src="./js/index.js"></script>
+  <script src="./js/utilities.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 
 function getValue(elementId) {
     const element = document.getElementById(elementId);
-    const value = parseFloat(element.innerText);
+    let value = parseFloat(element.innerText);
     return value;
   }
 
